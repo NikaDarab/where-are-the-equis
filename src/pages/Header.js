@@ -1,15 +1,20 @@
-import React from 'react';
+"use client";
+import React, {useContext} from 'react';
 import Link from 'next/link';
+import { AppContext } from '@/context/AppContext';
 import { SunIcon, MoonIcon } from '@heroicons/react/24/solid';
 
-export default function Header({ darkMode, toggleDarkMode }) {
+export default function Header() {
+  const { darkMode, toggleDarkMode } = useContext(AppContext);
   return (
-    <header className={`${darkMode ? 'bg-gray-900 text-white' : 'bg-yellow-50 text-black'} w-full`}>
-      <div className='container mx-auto flex justify-between items-center'>
-        <h1 className='text-xl sm:text-6xl font-bold'>
+    <header className={`${darkMode ? 'bg-gray-900 text-yellow-50' : 'bg-yellow-50 text-gray-900'} w-full p-2`}>
+      <div className='container mx-auto flex justify-between items-center mt-5 sm:mt-7'>
+        <Link href='/'>
+        <h1 className='text-xl sm:text-6xl font-bold pl-4'>
           Where Are The Equis?
         </h1>
-        <div className='flex items-center space-x-4'>
+        </Link>
+        <div className='flex items-center space-x-4 pr-4'>
           <button
             onClick={toggleDarkMode}
             className='p-2 rounded-full focus:outline-none'
