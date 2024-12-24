@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { addData, getData } from '../../lib/firebase';
+import { addData, getData } from '../../../lib/firebase';
 
 export default function Data() {
   const [data, setData] = useState([]);
