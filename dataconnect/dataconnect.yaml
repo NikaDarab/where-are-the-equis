@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "where-are-the-equis"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "where-are-the-equis-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]

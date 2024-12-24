@@ -1,0 +1,68 @@
+[debug] [2024-12-17T04:28:04.602Z] ----------------------------------------------------------------------
+[debug] [2024-12-17T04:28:04.607Z] Command:       /Users/nikadarab/.local/bin/firebase /Users/nikadarab/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase emulators:start --project where-are-the-equis
+[debug] [2024-12-17T04:28:04.615Z] CLI Version:   13.29.0
+[debug] [2024-12-17T04:28:04.615Z] Platform:      darwin
+[debug] [2024-12-17T04:28:04.615Z] Node Version:  v18.5.0
+[debug] [2024-12-17T04:28:04.637Z] Time:          Mon Dec 16 2024 22:28:04 GMT-0600 (Central Standard Time)
+[debug] [2024-12-17T04:28:04.637Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-17T04:28:04.813Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-17T04:28:04.814Z] > authorizing via signed-in user (nika.darab@gmail.com)
+[info] i  emulators: Starting emulators: dataconnect {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: dataconnect"}}
+[debug] [2024-12-17T04:28:05.934Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-12-17T04:28:05.934Z] [dataconnect.postgres] postgres server for dataconnect only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-12-17T04:28:05.935Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"dataconnect":[{"address":"127.0.0.1","family":"IPv4","port":9399},{"address":"::1","family":"IPv6","port":9399}],"dataconnect.postgres":[{"address":"127.0.0.1","family":"IPv4","port":5432}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-12-17T04:28:05.951Z] [hub] writing locator at /var/folders/mc/jyf4w9tn6ngbw71xbw4kgg780000gn/T/hub-where-are-the-equis.json
+[debug] [2024-12-17T04:28:06.129Z] I1216 22:28:06.106497   33812 control.go:45] [engine.Service /emulator/where-are-the-equis 1511] UpdateSchema(): done sources: schema/schema.gql [1384B] 
+I1216 22:28:06.121395   33812 control.go:73] [engine.Service /emulator/where-are-the-equis 1511] UpdateConnector(default): done sources: connector/mutations.gql [1163B] connector/queries.gql [1855B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1216 22:28:06.106497   33812 control.go:45] [engine.Service /emulator/where-are-the-equis 1511] UpdateSchema(): done sources: schema/schema.gql [1384B] \nI1216 22:28:06.121395   33812 control.go:73] [engine.Service /emulator/where-are-the-equis 1511] UpdateConnector(default): done sources: connector/mutations.gql [1163B] connector/queries.gql [1855B] \n"}}
+[debug] [2024-12-17T04:28:06.131Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-12-17T04:28:06.132Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-12-17T04:28:06.132Z] Starting Data Connect Emulator with command {"binary":"/Users/nikadarab/.cache/firebase/emulators/dataconnect-emulator-1.7.5","args":["--logtostderr","-v=2","dev","--listen=127.0.0.1:9399,[::1]:9399","--config_dir=/Users/nikadarab/dev/where-are-the-equis/dataconnect","--enable_output_schema_extensions=true","--enable_output_generated_sdk=true"],"optionalArgs":["listen","config_dir","enable_output_schema_extensions","enable_output_generated_sdk"],"joinArgs":true,"shell":false,"port":9399} {"metadata":{"emulator":{"name":"dataconnect"},"message":"Starting Data Connect Emulator with command {\"binary\":\"/Users/nikadarab/.cache/firebase/emulators/dataconnect-emulator-1.7.5\",\"args\":[\"--logtostderr\",\"-v=2\",\"dev\",\"--listen=127.0.0.1:9399,[::1]:9399\",\"--config_dir=/Users/nikadarab/dev/where-are-the-equis/dataconnect\",\"--enable_output_schema_extensions=true\",\"--enable_output_generated_sdk=true\"],\"optionalArgs\":[\"listen\",\"config_dir\",\"enable_output_schema_extensions\",\"enable_output_generated_sdk\"],\"joinArgs\":true,\"shell\":false,\"port\":9399}"}}
+[info] i  dataconnect: Data Connect Emulator logging to dataconnect-debug.log {"metadata":{"emulator":{"name":"dataconnect"},"message":"Data Connect Emulator logging to \u001b[1mdataconnect-debug.log\u001b[22m"}}
+[debug] [2024-12-17T04:28:06.218Z] I1216 22:28:06.218337   33813 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1216 22:28:06.218337   33813 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-12-17T04:28:06.249Z] I1216 22:28:06.240132   33813 control.go:45] [engine.Service /emulator/where-are-the-equis 17cf] UpdateSchema(): done sources: schema/schema.gql [1384B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1216 22:28:06.240132   33813 control.go:45] [engine.Service /emulator/where-are-the-equis 17cf] UpdateSchema(): done sources: schema/schema.gql [1384B] \n"}}
+[info] i  dataconnect: Started up Postgres server, listening on {"address":"127.0.0.1","family":"IPv4","port":5432} {"metadata":{"emulator":{"name":"dataconnect"},"message":"Started up Postgres server, listening on {\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":5432}"}}
+[debug] [2024-12-17T04:28:06.255Z] [Data Connect] Connecting to postgres://127.0.0.1:5432/fdcdb?sslmode=disable}...
+[debug] [2024-12-17T04:28:06.266Z] >>> [apiv2][query] POST http://127.0.0.1:9399/emulator/configure [none]
+[debug] [2024-12-17T04:28:06.266Z] >>> [apiv2][body] POST http://127.0.0.1:9399/emulator/configure {"connectionString":"postgres://127.0.0.1:5432/fdcdb?sslmode=disable","database":"fdcdb","serviceId":"where-are-the-equis","maxOpenConnections":1}
+[debug] [2024-12-17T04:28:06.283Z] I1216 22:28:06.266465   33813 control.go:73] [engine.Service /emulator/where-are-the-equis 17cf] UpdateConnector(default): done sources: connector/mutations.gql [1163B] connector/queries.gql [1855B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1216 22:28:06.266465   33813 control.go:73] [engine.Service /emulator/where-are-the-equis 17cf] UpdateConnector(default): done sources: connector/mutations.gql [1163B] connector/queries.gql [1855B] \n"}}
+[debug] [2024-12-17T04:28:06.286Z] *** [apiv2] error from fetch(http://127.0.0.1:9399/emulator/configure, {"headers":{},"method":"POST","body":"{\"connectionString\":\"postgres://127.0.0.1:5432/fdcdb?sslmode=disable\",\"database\":\"fdcdb\",\"serviceId\":\"where-are-the-equis\",\"maxOpenConnections\":1}"}): FetchError: request to http://127.0.0.1:9399/emulator/configure failed, reason: connect ECONNREFUSED 127.0.0.1:9399
+[debug] [2024-12-17T04:28:06.286Z] [Data Connect] Retrying connectToPostgress call (1 of 3 attempts): FirebaseError: Data Connect emulator: undefined
+[debug] [2024-12-17T04:28:06.337Z] I1216 22:28:06.336887   33813 codegen.go:82] [connector "default" javascriptSdk] Generating sources into "/Users/nikadarab/dev/where-are-the-equis/dataconnect-generated/js/default-connector"
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1216 22:28:06.336887   33813 codegen.go:82] [connector \"default\" javascriptSdk] Generating sources into \"/Users/nikadarab/dev/where-are-the-equis/dataconnect-generated/js/default-connector\"\n"}}
+[debug] [2024-12-17T04:28:06.338Z] I1216 22:28:06.338767   33813 collector.go:107] schema extensions wrote into "/Users/nikadarab/dev/where-are-the-equis/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [65151B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1216 22:28:06.338767   33813 collector.go:107] schema extensions wrote into \"/Users/nikadarab/dev/where-are-the-equis/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [65151B] \n"}}
+[debug] [2024-12-17T04:28:06.340Z] I1216 22:28:06.340810   33813 collector.go:107] connector "default" javascriptSdk wrote into "/Users/nikadarab/dev/where-are-the-equis/dataconnect-generated/js/default-connector"
+Generated sources: esm/package.json [17B] index.cjs.js [233B] package.json [634B] index.d.ts [264B] esm/index.esm.js [192B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1216 22:28:06.340810   33813 collector.go:107] connector \"default\" javascriptSdk wrote into \"/Users/nikadarab/dev/where-are-the-equis/dataconnect-generated/js/default-connector\"\nGenerated sources: esm/package.json [17B] index.cjs.js [233B] package.json [634B] index.d.ts [264B] esm/index.esm.js [192B] \n"}}
+[debug] [2024-12-17T04:28:06.356Z] I1216 22:28:06.355723   33813 installsdk.go:48] Package @firebasegen/default-connector is already installed. Skipping installation
+I1216 22:28:06.355767   33813 load.go:115] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1216 22:28:06.355723   33813 installsdk.go:48] Package @firebasegen/default-connector is already installed. Skipping installation\nI1216 22:28:06.355767   33813 load.go:115] Finished reloading\n"}}
+[debug] [2024-12-17T04:28:06.356Z] I1216 22:28:06.356039   33813 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:9399
+I1216 22:28:06.356301   33813 dev.go:95] Listening on address (HTTP + gRPC): [::1]:9399
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1216 22:28:06.356039   33813 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:9399\nI1216 22:28:06.356301   33813 dev.go:95] Listening on address (HTTP + gRPC): [::1]:9399\n"}}
+[debug] [2024-12-17T04:28:08.288Z] [Data Connect] Connecting to postgres://127.0.0.1:5432/fdcdb?sslmode=disable}...
+[debug] [2024-12-17T04:28:08.289Z] >>> [apiv2][query] POST http://127.0.0.1:9399/emulator/configure [none]
+[debug] [2024-12-17T04:28:08.289Z] >>> [apiv2][body] POST http://127.0.0.1:9399/emulator/configure {"connectionString":"postgres://127.0.0.1:5432/fdcdb?sslmode=disable","database":"fdcdb","serviceId":"where-are-the-equis","maxOpenConnections":1}
+[debug] [2024-12-17T04:28:08.394Z] Frontend message 
+[debug] [2024-12-17T04:28:08.399Z] Backend message AuthenticationResponse
+[debug] [2024-12-17T04:28:08.400Z] Backend message ParameterStatus
+[debug] [2024-12-17T04:28:08.401Z] Backend message ReadyForQuery
+[debug] [2024-12-17T04:28:08.402Z] Frontend message Query
+[debug] [2024-12-17T04:28:13.706Z] RuntimeError: unreachable
+    at wasm://wasm/0222924a:wasm-function[5692]:0x42e8d4
+    at wasm://wasm/0222924a:wasm-function[5668]:0x429e8f
+    at wasm://wasm/0222924a:wasm-function[2877]:0x25097d
+    at Module._pg_initdb (/Users/nikadarab/.cache/firebase/tools/lib/node_modules/@electric-sql/pglite/dist/index.cjs:12:118235)
+    at eE.ua (/Users/nikadarab/.cache/firebase/tools/lib/node_modules/@electric-sql/pglite/dist/index.cjs:12:2428733)
+    at async eE.create (/Users/nikadarab/.cache/firebase/tools/lib/node_modules/@electric-sql/pglite/dist/index.cjs:12:2423415)
+    at async PostgresServer.forceCreateDB (/Users/nikadarab/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/emulator/dataconnect/pgliteServer.js:112:24)
+    at async PostgresServer.getDb (/Users/nikadarab/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/emulator/dataconnect/pgliteServer.js:95:23)
+    at async Object.onMessage (/Users/nikadarab/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/emulator/dataconnect/pgliteServer.js:53:32)
+[error] 
+[error] Error: An unexpected error has occurred.
