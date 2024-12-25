@@ -97,6 +97,7 @@ export default function SignUp() {
           <option value='Bud & Lisa'>Bud & Lisa</option>
           <option value='Chris & Ashley'>Chris & Ashley</option>
           <option value='Kyler & Nika'>Kyler & Nika</option>
+          <option value='Create a Pod'>Create a Pod</option>
         </select>
       </div>
       <div className='flex justify-between'>

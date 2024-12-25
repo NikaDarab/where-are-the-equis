@@ -1,5 +1,5 @@
 import React from 'react';
-import { Geist, Geist_Mono } from '@next/font/google';
+import { Geist, Geist_Mono } from "next/font/google";
 import Header from '@/pages/Header';
 import { AppProvider } from '@/context/AppContext';
 import "./globals.css";
